@@ -4,8 +4,12 @@
              xmlns:local="clr-namespace:AppCenterSample"
              x:Class="AppCenterSample.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
+    <StackLayout Orientation="Vertical" VerticalOptions="Center">
+    <Label Text="Welcome to Xamarin.Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-
+        <Button x:Name="btnEvent" Text="Send Event" Clicked="btnEvent_Clicked"/>
+        <Button x:Name="btnSendError" Text="Send Error" Clicked="btnSendError_Clicked"/>
+        <Button x:Name="btnCrash" Text="Crash the app" Clicked="btnCrash_Clicked" />
+    </StackLayout>
 </ContentPage>
