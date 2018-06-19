@@ -21,7 +21,7 @@ namespace AppCenterSample
 
 		protected override void OnStart ()
 		{
-            AppCenter.Start("android=77083321-275b-43ce-8c3d-e8aec5a400c9;" + "uwp={Your UWP App secret here};" + "ios={Your iOS App secret here}", typeof(Analytics), typeof(Crashes));
+            AppCenter.Start("android={android app id};" + "uwp={Your UWP App secret here};" + "ios={Your iOS App secret here}", typeof(Analytics), typeof(Crashes));
         }
 
 		protected override void OnSleep ()
